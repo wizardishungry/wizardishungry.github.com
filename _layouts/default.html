@@ -14,11 +14,7 @@
   // Enforce SSL
   (function (root) {
     "use strict";
-    var h = root ? root.location.hostname : "",
-    p = root ? root.location.protocol : "";
-    if ("http:" === p && !(/^(localhost|127.0.0.1)/).test(h)) {
-      root.location = "https://jonwillia.ms/";
-    }
+    root.location = "https://jonwillia.ms/";
   }
   ("undefined" !== typeof window ? window : this));
 </script>
